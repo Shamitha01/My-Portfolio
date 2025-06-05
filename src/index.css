@@ -10,3 +10,4 @@ html {
 body {
   @apply text-white dark:text-white bg-brand-light dark:bg-gradient-to-b dark:from-indigo-800 dark:to-indigo-900;
 }
+

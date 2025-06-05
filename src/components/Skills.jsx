@@ -1,10 +1,10 @@
 import { FaReact, FaCss3Alt, FaJs, FaDatabase } from "react-icons/fa";
 
 const skillData = [
-  { name: "React", icon: <FaReact size={30} /> },
-  { name: "Tailwind", icon: <FaCss3Alt size={30} /> },
-  { name: "JavaScript", icon: <FaJs size={30} /> },
-  { name: "SQL", icon: <FaDatabase size={30} /> },
+  { name: "React", icon: <FaReact size={30} className="text-amber-500"/> },
+  { name: "Tailwind", icon: <FaCss3Alt size={30} className="text-amber-500"/> },
+  { name: "JavaScript", icon: <FaJs size={30} className="text-amber-500"/> },
+  { name: "SQL", icon: <FaDatabase size={30} className="text-amber-500"/> },
 ];
 
 export default function Skills() {
@@ -16,10 +16,10 @@ export default function Skills() {
         {skillData.map((skill) => (
           <div
             key={skill.name}
-            className="bg-blue-600 p-4 rounded-xl shadow-lg text-center hover:scale-105 transition transform duration-300"
+            className="bg-black p-4 rounded-xl shadow-lg text-center hover:scale-105 transition transform duration-300"
             >
             {skill.icon}
-            <span className="mt-2">{skill.name}</span>
+            <span className="mt-2 text-amber-500">{skill.name}</span>
           </div>
         ))}
       </div>
