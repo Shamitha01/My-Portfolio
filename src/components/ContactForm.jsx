@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 
 export default function ContactForm() {
   const {
@@ -7,36 +8,42 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    toast.success("Message sent successfully!");
+  };
 
   return (
-    <section id="contact" className="scroll-mt-24 p-10">
-      <h2 className="text-3xl font-semibold mb-4">Reach Out</h2>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md mx-auto">
+    <section id="contact" className="scroll-mt-24 px-4 py-12 max-w-6xl mx-auto">
+      <h2 className="text-3xl font-extrabold mb-8 text-center">Reach Out</h2>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-4 max-w-md mx-auto"
+      >
         <input
           {...register("name", { required: true })}
           placeholder="Your Name"
-          className="w-full p-2 rounded bg-white text-black"
+          className="w-full p-3 rounded-full bg-black text-white"
         />
-        {errors.name && <span className="text-red-300">Name is required</span>}
+        {errors.name && <span className="text-red-600">Name is required</span>}
 
         <input
           {...register("email", { required: true })}
           placeholder="Your Email"
-          className="w-full p-2 rounded bg-white text-black"
+          className="w-full p-3 rounded-full bg-black text-white"
         />
-        {errors.email && <span className="text-red-300">Email is required</span>}
+        {errors.email && <span className="text-red-600">Email is required</span>}
 
         <textarea
           {...register("message", { required: true })}
           placeholder="Your Message"
-          className="w-full p-2 rounded bg-white text-black"
+          className="w-full p-3 rounded-xl bg-black text-white"
         />
-        {errors.message && <span className="text-red-300">Message is required</span>}
+        {errors.message && <span className="text-red-600">Message is required</span>}
 
         <button
           type="submit"
-          className="bg-white text-indigo-800 px-4 py-2 rounded hover:bg-indigo-100"
+          className="bg-black text-white px-4 py-2 rounded hover:text-amber-500"
         >
           Send Message
         </button>
