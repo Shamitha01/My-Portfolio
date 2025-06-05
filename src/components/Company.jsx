@@ -7,7 +7,7 @@ export default function Company() {
       <div className="space-y-6 flex flex-col items-center">
         <div className="bg-black p-6 rounded-xl shadow-md w-full max-w-3xl">
           <h3 className="text-xl font-bold text-white flex items-center gap-2">
-            <FaBriefcase className="text-amber-400" />
+            <FaBriefcase className="text-white" />
             Frontend Developer
           </h3>
           <p className="text-white">XYZ Corp (2022 - Present)</p>

@@ -14,7 +14,7 @@ export default function Hero() {
             Hi, I'm Shamitha
           </h1>
 
-          <p className="text-2xl font-bold text-black mb-1 min-h-[30px]">
+          <p className="text-2xl font-bold text-black mb-5 min-h-[30px]">
             <Typewriter
               words={[
                 "Frontend Developer",

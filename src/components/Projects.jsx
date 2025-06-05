@@ -13,14 +13,14 @@ export default function Projects() {
     },
     {
       title: "Fast Pizza React Co",
-      description: "Pizza ordering app with minimal features",
+      description: "Pizza ordering app with minimal features 🍕🍕",
       image: PizzaPhoto,
       github: "https://github.com/yourusername/pizza-app",
       demo: "https://fastpizza.vercel.app/"
     },
     {
       title: "The wild oasis",
-      description: "Website for cabin management for hotel employees",
+      description: "Website for cabin management for hotel employees 🛌🛎️",
       image: OasisPhoto,
       github: "https://github.com/yourusername/the-wild-oasis",
       demo: "https://the-wild-oasis.vercel.app/"
