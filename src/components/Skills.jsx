@@ -11,7 +11,7 @@ export default function Skills() {
   return (
     <section id="skills" className="scroll-mt-24 p-10">
 
-      <h2 className="text-center text-3xl font-semibold mb-4">Skills</h2>
+      <h2 className="text-center text-3xl font-extrabold font-semibold mb-4">Skills</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {skillData.map((skill) => (
           <div
