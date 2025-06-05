@@ -34,7 +34,7 @@ export default function Projects() {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-black text-white rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-amber-400/40 transition-transform duration-300 border border-black"
+            className="bg-black text-white rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-amber-400/40 transition-transform duration-300 border-4 border-black"
           >
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
             <div className="p-4">

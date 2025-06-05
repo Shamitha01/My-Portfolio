@@ -23,21 +23,22 @@ export default function ContactForm() {
         <input
           {...register("name", { required: true })}
           placeholder="Your Name"
-          className="w-full p-3 rounded-full bg-black text-white"
+          className="w-full p-3 rounded-full bg-black text-white focus:ring-3"
         />
         {errors.name && <span className="text-red-600">Name is required</span>}
 
         <input
           {...register("email", { required: true })}
+          type="email"
           placeholder="Your Email"
-          className="w-full p-3 rounded-full bg-black text-white"
+          className="w-full p-3 rounded-full bg-black text-white focus:ring-3"
         />
         {errors.email && <span className="text-red-600">Email is required</span>}
 
         <textarea
           {...register("message", { required: true })}
           placeholder="Your Message"
-          className="w-full p-3 rounded-xl bg-black text-white"
+          className="w-full p-3 rounded-xl bg-black text-white focus:ring-3"
         />
         {errors.message && <span className="text-red-600">Message is required</span>}
 
