@@ -1,7 +1,8 @@
-import {FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import QuizPhoto from "../assets/project-photos/The-react-quiz-app.png";
 import PizzaPhoto from "../assets/project-photos/Fast-react-pizza.png";
 import OasisPhoto from "../assets/project-photos/The-wild-oasis.png";
+import RecipeBook from "../assets/project-photos/RecipeBook.png";
 export default function Projects() {
   const projects = [
     {
@@ -9,21 +10,28 @@ export default function Projects() {
       description: "15 questions related to React.js with timer 😊",
       image: QuizPhoto,
       github: "https://github.com/yourusername/react-quiz-app",
-      demo: "https://quiz-app-demo.vercel.app/"
+      demo: "https://quiz-app-demo.vercel.app/",
     },
     {
       title: "Fast Pizza React Co",
       description: "Pizza ordering app with minimal features 🍕🍕",
       image: PizzaPhoto,
       github: "https://github.com/yourusername/pizza-app",
-      demo: "https://fastpizza.vercel.app/"
+      demo: "https://fastpizza.vercel.app/",
     },
     {
       title: "The wild oasis",
       description: "Website for cabin management for hotel employees 🛌🛎️",
       image: OasisPhoto,
       github: "https://github.com/yourusername/the-wild-oasis",
-      demo: "https://the-wild-oasis.vercel.app/"
+      demo: "https://the-wild-oasis.vercel.app/",
+    },
+    {
+      title: "Recipe Book",
+      description: "The Website to add and edit recipes 🍽️🍽️",
+      image: RecipeBook,
+      github: "https://github.com/yourusername/the-wild-oasis",
+      demo: "https://the-wild-oasis.vercel.app/",
     },
   ];
 
@@ -36,15 +44,29 @@ export default function Projects() {
             key={idx}
             className="bg-black text-white rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-amber-400/40 transition-transform duration-300 border-4 border-black"
           >
-            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover"
+            />
             <div className="p-4">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p>{project.description}</p>
               <div className="mt-4 flex gap-4">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:underline flex items-center gap-1">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-400 hover:underline flex items-center gap-1"
+                >
                   <FaGithub /> GitHub
                 </a>
-                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:underline flex items-center gap-1">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-400 hover:underline flex items-center gap-1"
+                >
                   <FaExternalLinkAlt /> Live Demo
                 </a>
               </div>
